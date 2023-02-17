@@ -4,6 +4,150 @@
 
 body {
    font-family: "Gilroy", sans-serif;
+   background-image: url("/images/BG.jpg");
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-color: #0b1d26;
+   color: white;
+}
+
+/* SECONDARY & WRAPPERS */
+
+.space-between {
+   justify-content: space-between;
+}
+
+.row {
+   display: flex;
+}
+
+.container-wide {
+   max-width: 1790px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.nav-wrapper {
+   margin-bottom: 198px;
+}
+
+/* PRIMARY */
+
+.header {
+   padding-top: 64px;
+   .logo {
+      font-family: "Chronicle Display", serif;
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 3px;
+      text-transform: capitalize;
+      font-weight: 700;
+   }
+   .nav-menu {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      ul {
+         position: relative;
+         display: flex;
+      }
+      li + li {
+         margin-left: 40px;
+      }
+      li {
+         position: relative;
+         top: 7px;
+      }
+      a {
+         transition: color 0.2s ease-in;
+         &:hover {
+            color: #fbd784;
+         }
+      }
+   }
+   .account {
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 21px;
+      transition: color 0.2s ease-in;
+      position: relative;
+      top: 7px;
+      display: flex;
+      // justify-content: center;
+      align-content: center;
+      &:hover {
+         color: #fbd784;
+      }
+      img {
+         position: relative;
+         top: -9px;
+         margin-right: 8px;
+      }
+   }
+   .big-section {
+      display: block;
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      transition: transform 0.3s ease-in;
+      &:hover {
+         transform: translateY(-1.5%);
+      }
+      .some-category {
+         position: relative;
+         display: flex;
+         text-transform: uppercase;
+         color: #fbd784;
+         font-weight: 700;
+         line-height: 22px;
+         font-size: 18px;
+         letter-spacing: 6px;
+         padding-left: 104px;
+         margin-bottom: 32px;
+         &::before {
+            content: "";
+            display: block;
+            width: 72px;
+            height: 2px;
+            background-color: #fbd784;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+         }
+      }
+      .caption {
+         font-family: "Chronicle Display";
+         font-style: normal;
+         font-weight: 500;
+         font-size: 88px;
+         line-height: 1.136;
+         text-transform: capitalize;
+         margin-bottom: 32px;
+      }
+      .scroll-down {
+         display: inline-block;
+         position: relative;
+         padding-right: 32px;
+         font-style: normal;
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 1.222;
+         &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 16px;
+            height: 24px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url("../svg/content-arrow-down.svg");
+         }
+      }
+   }
 }
 
 @import url("./_response.scss");
