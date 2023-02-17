@@ -1,0 +1,24 @@
+{
+  "name": "mntn-landing",
+  "version": "1.0.0",
+  "description": "layout practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "sass --style compressed --update scss:css",
+    "watch:css": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yo-atmosf3re/mntn-landing.git"
+  },
+  "author": "SAM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yo-atmosf3re/mntn-landing/issues"
+  },
+  "homepage": "https://github.com/yo-atmosf3re/mntn-landing#readme",
+  "devDependencies": {
+    "sass": "^1.58.2"
+  }
+}

@@ -1,0 +1,9 @@
+@import "./_null-styles.scss";
+@import "./_fonts.scss";
+@import "./_variables.scss";
+
+body {
+   font-family: "Gilroy", sans-serif;
+}
+
+@import url("./_response.scss");
