@@ -7,8 +7,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>MNTN</title>
    <link rel="stylesheet" href="css/main.css">
-   <link as="font" rel="preload" href="fonts/cronicle-display/ChronicleDisplay-Black.woff2" type="font/woff2"
-      crossorigin />
 </head>
 
 <body>
@@ -36,21 +34,46 @@
                      </li>
                   </ul>
                </nav>
-               <div class="account">
-                  <a href="#">
+               <a class="account" href="#">
+                  Account
+               </a>
+               <button class="nav-mobile-button">
+                  <span class="nav-mobile-button__icon"></span>
+               </button>
+               <nav class="mobile-nav">
+                  <nav class="nav-menu">
+                     <ul>
+                        <li>
+                           <a href="#">
+                              Equipment
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              About us
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              Blog
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <a class="account" href="#">
                      Account
                   </a>
-               </div>
+               </nav>
             </div>
          </nav>
          <a href="#" class="big-section">
-            <div class="some-subtitle section-subtitle">
+            <div class="some-subtitle big-section__section-subtitle">
                A Hiking guide
             </div>
-            <h1 class="caption">
+            <h1 class="big-section__caption">
                Be prepared for the Mountains and beyond!
             </h1>
-            <p class="some-button scroll-down">
+            <p class="some-button big-section__scroll-down">
                scroll downs
             </p>
          </a>
@@ -60,10 +83,10 @@
       <div class="main-container">
          <article class="article">
             <div class="article-text" data-number="01">
-               <div class="some-subtitle article-subtitle">
+               <div class="some-subtitle article-text__subtitle">
                   GEt Started
                </div>
-               <h2 class="article-title">
+               <h2 class="article-text__title">
                   What level of hiker are you?
                </h2>
                <p>
@@ -74,7 +97,7 @@
                   Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or
                   expert backpacker?
                </p>
-               <a href="#" class="some-button article-button">
+               <a href="#" class="some-button article-text__article-button">
                   read more
                </a>
             </div>
@@ -132,21 +155,21 @@
       <div class="main-container">
          <div class="row space-between">
             <div class="footer-copyright">
-               <div class="copyright-logo">
+               <div class="footer-copyright__logo">
                   <h2 class="logo footer-logo">
                      MTNT
                   </h2>
                </div>
-               <p class="copyright-description">
+               <p class="footer-copyright__description">
                   Get out there & discover your next slope, mountain & destination!
                </p>
-               <p class="copyright-terms">
+               <p class="footer-copyright__terms">
                   Copyright 2023 MNTN, Inc. Terms & Privacy
                </p>
             </div>
-            <div class="footer-nav-wrapper">
+            <div class="footer-wrapper">
                <div class="footer-nav">
-                  <h4 class="nav-title">
+                  <h4 class="footer-nav__nav-title">
                      More on MNTN
                   </h4>
                   <ul>
@@ -203,6 +226,9 @@
          </div>
       </div>
    </footer>
+   <script src="/scripts/main.js" defer>
+
+   </script>
 </body>
 
 </html>

@@ -1,0 +1,14 @@
+@media (max-width: 800px) {
+   .nav-menu {
+      display: none;
+   }
+   .account {
+      display: none;
+   }
+   .nav-mobile-button {
+      display: block;
+   }
+   .mobile-nav-active {
+      display: flex;
+   }
+}
