@@ -13,6 +13,10 @@ body {
 
 /* SECONDARY & WRAPPERS */
 
+.no-scroll {
+   overflow-y: hidden;
+}
+
 .space-between {
    justify-content: space-between;
 }
@@ -49,7 +53,7 @@ body {
    text-transform: uppercase;
    color: $secondColor;
    font-weight: 700;
-   line-height: 22px;
+   line-height: 1.222;
    font-size: 18px;
    letter-spacing: 6px;
    margin-bottom: 32px;
@@ -94,6 +98,7 @@ body {
 .header {
    padding-top: 64px;
    padding-bottom: 843px;
+   // display: none;
 }
 
 .big-section {
@@ -118,6 +123,7 @@ body {
       line-height: 1.136;
       text-transform: capitalize;
       margin-bottom: 32px;
+      text-shadow: 0 0 1px #0000008c;
    }
    &__scroll-down {
       padding-right: 32px;
@@ -265,9 +271,11 @@ body {
 .mobile-nav {
    // display: flex;
    display: none;
+   transition: display 0.2s;
    flex-direction: column;
    justify-content: space-between;
    position: fixed;
+   z-index: 8;
    top: 0;
    right: 0;
    width: 320px;
@@ -291,6 +299,7 @@ body {
 
 /* MAIN */
 .main {
+   // display: none;
 }
 
 .article {
@@ -298,6 +307,8 @@ body {
    justify-content: space-between;
    align-items: center;
    margin-bottom: 200px;
+   // flex-wrap: wrap;
+   column-gap: 30px;
    &:nth-child(even) {
       flex-direction: row-reverse;
    }
@@ -307,6 +318,7 @@ body {
    position: relative;
    max-width: 782px;
    padding-left: 150px;
+   margin-right: 20px;
    &__article-subtitle {
       padding-left: 96px;
    }
@@ -371,7 +383,13 @@ body {
 
 /* FOOTER */
 .footer {
+   // display: none;
    padding-bottom: 120px;
+}
+
+.footer-row {
+   display: flex;
+   justify-content: space-between;
 }
 
 .footer-copyright {

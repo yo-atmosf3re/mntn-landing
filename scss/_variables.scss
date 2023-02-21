@@ -1,2 +1,14 @@
 $secondColor: #fbd784;
 $primaryColor: #0b1d26;
+
+@mixin simpleAnimation {
+   animation: showBlock 0.3s linear forwards;
+   @keyframes showBlock {
+      0% {
+         opacity: 0;
+      }
+      100% {
+         opacity: 1;
+      }
+   }
+}
